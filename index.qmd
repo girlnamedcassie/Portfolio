@@ -1,0 +1,16 @@
+---
+title: "Cassie"
+about:
+  template: trestles
+  image: profile.jpeg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/casandra-sanchez/
+    - icon: github
+      text: Github
+      href: https://github.com/girlnamedcassie
+    - icon: envelope
+      text: Email
+      href: mailto:sanchez_casandra@live.com
+---

@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Casandra Sanchez"
+  navbar:
+    right:
+      - text: "About me"
+        file: index.qmd
+      - text: "Resume"
+        file: resume.qmd
+      - text: "Portfolio"
+        file: portfolio.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/casandra-sanchez/
+      - icon: github
+        href: https://github.com/girlnamedcassie
+      - icon: envelope-fill
+        href: mailto:sanchez_casandra@live.com
+format:
+  html:
+    theme: 
+      light: lux
+      dark: cyborg
+    fontsize: 0.9em
+    linestretch: 1.8
+    monofont: "Monaco"
+
+editor: visual

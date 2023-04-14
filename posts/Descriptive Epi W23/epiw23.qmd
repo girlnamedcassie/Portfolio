@@ -1,0 +1,28 @@
+---
+title: "HE375: Epidemiology"  
+author: "Casandra Sanchez"
+date: "March 20, 2023"
+image: epi.jpg
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc-location: right
+    html-math-method: katex
+output: html_document
+categories: [public health, visualization, epidemiology]
+---
+
+![Figure 1.](epi.jpg)
+
+## NATIONAL:
+
+You will use ONE state of your choice as the basis for all your answers to Part I, Sections 1-4.Begin with a sentence or two indicating which state you chose and why. (1 point) My parents chose Oregon as their home state almost 25 years ago, after migrating around the United States for some time, and I am so grateful they did. I was born and raised in Oregon and appreciate the diversity of each region, which is why I chose to base my national research on Oregon.
+
+### Part 1
+
+Begin with a sentence or two indicating which state you chose and why. (1 point) My parents chose Oregon as their home state almost 25 years ago, after migrating around the United States for some time, and I am so grateful they did. I was born and raised in Oregon and appreciate the diversity of each region, which is why I chose to base my national research on Oregon.
+
+### Part 2
+
+Resource: US Census: https://data.census.gov/cedsci/ In the search window, type in "demographics of the state you chose." You'll find the American Community Survey data for your state, which will give you basic demographics. For the additional characteristics, explore the other data by selecting any of the options on the left side of the window
