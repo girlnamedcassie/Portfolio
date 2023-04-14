@@ -10,9 +10,3 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-
-### Who am I?
-
-
-
-### Where do I come from?

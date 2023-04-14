@@ -1,1 +1,15 @@
-PUT PROJECT IN HERE PLEASE
+---
+title: "Next Study"
+author: "Casandra Sanchez"
+date: "April 14, 2023"
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc-location: right
+    html-math-method: katex
+output: html_document
+categories: [public health]
+---
+
+Ignore this, this is the next post
