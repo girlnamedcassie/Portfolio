@@ -21,7 +21,7 @@ website:
 format:
   html:
     theme: 
-      light: lux
+      light: minty
       dark: cyborg
     fontsize: 0.9em
     linestretch: 1.8
