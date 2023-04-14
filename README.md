@@ -1,3 +1,2 @@
 # Portfolio
-Portfolio Link: 
-I am very mad at Cassie today because she did not buy me a brand new Lexus
+Portfolio Link: https://girlnamedcassie.github.io/Portfolio/
