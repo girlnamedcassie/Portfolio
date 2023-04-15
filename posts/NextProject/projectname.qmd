@@ -2,6 +2,7 @@
 title: "Next Study"
 author: "Casandra Sanchez"
 date: "April 14, 2023"
+image: epi.jpg
 format:
   html:
     page-layout: full
