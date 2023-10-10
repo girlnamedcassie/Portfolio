@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -59,7 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -77,43 +78,43 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Casandra Sanchez</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html">
+    <a class="nav-link" href="../../resume.html" rel="" target="">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html">
+    <a class="nav-link" href="../../portfolio.html" rel="" target="">
  <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/casandra-sanchez/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/casandra-sanchez/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/girlnamedcassie"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/girlnamedcassie" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:sanchez_casandra@live.com"><i class="bi bi-envelope-fill" role="img">
+    <a class="nav-link" href="mailto:sanchez_casandra@live.com" rel="" target=""><i class="bi bi-envelope-fill" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -186,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="epi.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 1.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 1.</figcaption>
 </figure>
 </div>
 <p>Descriptive epidemiology is concerned with answering questions such as who is affected, when and where the disease or health condition occurs, and what are the characteristics of the affected population. The research and navigation to collect and analyze data from various sources was used to generate descriptive statistics, such as incidence rates, prevalence rates, and mortality rates, which are used to describe the patterns and distribution of diseases or health conditions in a population.</p>
@@ -199,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_2_a Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 2.a.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 2.a.</figcaption>
 </figure>
 </div>
 <p>These statistics are essential to understand disease development. Two other characteristics I decided to include in my table were data for foreign-born populations with and without U.S. citizenship, and the language spoken at home, which is based on the population aged 5 and up. These characteristics are essential for health professionals because undocumented immigrants who have not naturalized in the United States are barred from participating in most federal healthcare programs, limiting their access to accessible and affordable healthcare. It is also crucial for health professionals to be aware that many people do not speak or practice English at home; therefore, without the assistance of a (paid) interpreter, the person receiving care may be misinformed or misdiagnosed when receiving and exchanging medical documents.</p>
@@ -207,34 +208,37 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-the-cdc-behavioral-risk-factor-surveillance-system-brfss" class="level3">
 <h3 class="anchored" data-anchor-id="using-the-cdc-behavioral-risk-factor-surveillance-system-brfss">Using the CDC Behavioral Risk Factor Surveillance System (BRFSS)</h3>
 <p>The Behavioral Risk Factor Surveillance System (BRFSS) is one of the United States’ pioneers in health-related telephone survey systems, collecting state data on U.S. residents’ health-related risk behaviors, chronic health conditions, and the use of preventive services. BRFSS started in 1984 working within 15 states and has now expanded through all 50 states, the District of Columbia, and three U.S. territories.</p>
-<p>The data collected from BRFSS would be useful to me as I pursue a public health career because using these tools I would be able to assist with the implementation of disease prevention and health promotion activities, and the monitoring of trends.</p>
-<p>State health departments use in-house interviewers or contract with telephone call centers or universities to conduct the BRFSS surveys throughout the year. The states use a standardized core questionnaire, optional modules, and questions specific to their state. The survey is conducted on both landlines and cell phones using Random Digit Dialing (RDD) techniques.</p>
-<p>BRFSS data runs the risk of information, reporting bias, specifically socially desirable responses because people who are surveyed could feel compelled to lie to avoid embarrassing themselves.</p>
+<p>The data collected from BRFSS would be useful to me as I pursue a public health career because by using these tools I would be able to assist with the implementation of disease prevention and health promotion activities, and the monitoring of trends.</p>
+<p>State health departments use in-house interviewers or contract with telephone call centers or universities to conduct the BRFSS surveys throughout the year. The states use a standardized core questionnaire, optional modules, and questions specific to their state. The survey is conducted on both land-lines and cell phones using “Random Digit Dialing” (RDD) techniques.</p>
+<p>BRFSS data runs the risk of information, reporting bias, specifically, socially desirable responses because people who are surveyed could feel compelled to lie to avoid embarrassing themselves.</p>
 <section id="breakdown-of-the-hypertension-data-in-oregon-by-gender-age-race-and-education." class="level4">
 <h4 class="anchored" data-anchor-id="breakdown-of-the-hypertension-data-in-oregon-by-gender-age-race-and-education.">Breakdown of the hypertension data in Oregon by gender, age, race, and education.</h4>
 <p>According to the CDC Behavioral Risk Factor Surveillance System (BRFSS) data for Oregon as of 2021, 30.9% of adults have been told by a doctor that they have high blood pressure. In the United States, 32.2% of adults have been told by a doctor that they have high blood pressure, compared to Oregon, the national average is 1.3% higher.</p>
-<p>Oregon Oral Health and BMI Data from the BRFSS Questionnaires The topic I chose for the state of Oregon, based on the 2020 data, was about oral health; adults that have had any permanent teeth extracted. The question asked in the BRFSS questionnaires was specifically worded as “Not including teeth lost for injury or orthodontics, how many of your permanent teeth have been removed because of tooth decay or gum disease?”. In Oregon, based on the 2020 data, 38.6% of adults have had at least one or more permanent teeth extracted. In the US, 40.2% of adults have had at least one or more permanent teeth extracted. Oregon is below the US benchmark with only a 1.6% difference.</p>
+<section id="oregon-oral-health-and-bmi-data-from-the-brfss-questionnaires" class="level5">
+<h5 class="anchored" data-anchor-id="oregon-oral-health-and-bmi-data-from-the-brfss-questionnaires">Oregon Oral Health and BMI Data from the BRFSS Questionnaires</h5>
+<p>The topic I chose for the state of Oregon, based on the 2020 data, was about oral health; adults that have had any permanent teeth extracted. The question asked in the BRFSS questionnaires was specifically worded as “Not including teeth lost for injury or orthodontics, how many of your permanent teeth have been removed because of tooth decay or gum disease?”. In Oregon, based on the 2020 data, 38.6% of adults have had at least one or more permanent teeth extracted. In the US, 40.2% of adults have had at least one or more permanent teeth extracted. Oregon is below the US benchmark with only a 1.6% difference.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_3_D_iii_1 Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 3_D_iii_1</figcaption><p></p>
+<figcaption class="figure-caption">Figure 3_D_iii_1</figcaption>
 </figure>
 </div>
 <p>In 2020, the percentage of adults that have had any permanent teeth extracted due to tooth decay or gum disease in the state of Oregon showed many differences but similarities as well. Both males and females were pretty equal, males sitting at 38.5% whereas females were at 38.7%, both males and females were similarly susceptible to tooth extraction. Those aged 65 and over were the most susceptible to tooth extraction with a percentage of 61.7%, between ages, the percentage has a linear relationship because the older you get the more likely you are to get teeth removed. Looking at the race and ethnic groups, American Indians / Alaskan Natives were the most susceptible to getting teeth extracted with the highest percentage of 48.5. All other races and ethnic groups were below 40%.</p>
-<p>The topic I chose for the state of Oregon, based on the 2021 data, was weight classification by Body Mass Index (BMI). To categorize the data there were two separate questions asked and based on the answers for each person, their BMI was calculated. The questions asked in the BRFSS Questionnaires were specifically worded as “About how much do you weigh without shoes? About how tall are you without shoes?”. In Oregon, based on the 2021 data, 65.1% of adults are classified as obese or overweight. In the US, 68.2% of adults are classified as obese or overweight.</p>
+<p>The second topic I chose to look further into for the state of Oregon, based on the 2021 data, was weight classification by Body Mass Index (BMI). To categorize the data there were two separate questions asked and based on the answers for each person, their BMI was calculated. The questions asked in the BRFSS Questionnaires were specifically worded as “About how much do you weigh without shoes? About how tall are you without shoes?”. In Oregon, based on the 2021 data, 65.1% of adults are classified as obese or overweight. In the US, 68.2% of adults are classified as obese or overweight.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_3D_iii_2 Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 3.D.iii.2</figcaption><p></p>
+<figcaption class="figure-caption">Figure 3.D.iii.2</figcaption>
 </figure>
 </div>
 <p>In 2021, there wasn’t data available for American Indian/Alaskan Native, Asian, multiracial and Hispanic races and ethnic groups who could be underweight based on their BMI. Combined, the percentage of males who are overweight or obese is greater than the percentage of females who are overweight and obese, making males more susceptible to a higher BMI. From ages 18-24, 55.5% were at a normal BMI but the relationship between BMI has a consistent linear relationship in the data table because the BMI increases as age increases. Between racial and ethnic groups, American Indians/Alaskan Natives are the most susceptible to becoming obese or overweight. Overall, I found the BRFSS website to be very interesting, the BRFSS Prevalence &amp; Trends Data Is such a useful tool for people who are curious about the prevalence of different health factors. It’s cool to see the data dating back to 1999. I found that the percentage of males and females in Oregon having had at least one tooth or more removed because of tooth decay or gum disease has greatly decreased since 1999. The percentage for females based on 2020 data was 38.7 and in 1999 it was 51.7. For males, it was 38.5 in 2020, and 54.0 in 1999.</p>
 </section>
 </section>
+</section>
 <section id="navigating-the-robert-wood-johnson-foundation-county-health-rankings-and-roadmaps" class="level3">
 <h3 class="anchored" data-anchor-id="navigating-the-robert-wood-johnson-foundation-county-health-rankings-and-roadmaps">Navigating the Robert Wood Johnson Foundation County Health Rankings and Roadmaps</h3>
 <p>One of the main findings that I thought was interesting was the geographic differences in school funding have a correlation dating back to the history of racial discrimination, violence, and exclusion. The summary listed that many counties in the Western and Southern U.S. do not spend enough money on the students for them to achieve national average test scores. It was found that counties with a great amount of Black, Hispanic, and American Indian / Alaska Native populations are experiencing funding deficits. I recently finished listening to the “Nice White Parents” podcast by Chana Joffe-Walt. Being a first-generation student, mixed with the fact that I went to predominantly white (private) schools, I honestly don’t have much exposure to how the public school system works. I uncovered some of my own biases from listening to the stories of the continuous systemic oppression towards the students who don’t fit in the “box” of school policymakers and how nothing is done to help revive curricula that work for the students.</p>
-<p>I can see these data being susceptible to information, recall can’t remember bias. During the data collection there is a possibility for an error in the classification of study participants’ exposure or outcome status.</p>
+<p>I can see these data being susceptible to information, recall, can’t remember bias. During the data collection there is a possibility for an error in the classification of study participants’ exposure or outcome status.</p>
 <section id="premature-death-health-outcome-in-oregon" class="level4">
 <h4 class="anchored" data-anchor-id="premature-death-health-outcome-in-oregon">Premature Death Health Outcome in Oregon</h4>
 <p>Premature death is measured as the years of life lost for those under 75 years of age per 100,000 people. The County Health Rankings sourced its data from the National Center for Health Statistics, specifically, the Mortality File. The 2022 reporting represents the data from 2018 through 2020. Based on the 2022 reporting representing data from 2018 through 2020, out of all the counties in Oregon, 4 counties did not have any data available - which were all rural. Jefferson County had the most years of life lost, 10,700 years, 81.9 of those years stemming from malignant neoplasms, a cancerous tumor. Besides being ranked as the #1 healthiest county, Benton County had the lowest number of years of life lost in deaths of people under age 75, per 100,000 people, totaling to only 4,000 people. The leading cause of those years lost was also malignant neoplasms. As a whole, the state of Oregon lost an average of 6,100 years of life which is just a bit below the United States average of 7,300 years of life.</p>
@@ -246,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_4D_iii Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 4.D.iii</figcaption><p></p>
+<figcaption class="figure-caption">Figure 4.D.iii</figcaption>
 </figure>
 </div>
 <p>I choose Gilliam county as my rural exploration and Washington County as my urban exploration. I thought there would be a great difference between these two counties because Washington County includes the Portland metropolitan area. The population density is high and with the huge amount of promotion I’ve seen of health initiatives throughout the major cities of Washington County, I thought the prevalence of adults with diagnosed diabetes was going to be low in comparison to a rural county and the state of Oregon. Every google question I looked up trying to find whether a rural county or an urban county was more prevalent to diabetes contradicted itself. Some reports stated urban counties as most prevalent in diabetes because of big access to fast food and other reports stated urban counties are least prevalent in diabetes because of all the walking one has to do to get around to places. Across the board, the two counties and the state of Oregon had a very close relationship and I’m surprised to know that the rural county I chose, Gilliam, is only 1% more prevalent than the urban county and Oregon.</p>
@@ -265,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_5B_iv_1 Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 5.B.iv.1 in conjunction with Figure 5.B.iv.2</figcaption><p></p>
+<figcaption class="figure-caption">Figure 5.B.iv.1 in conjunction with Figure 5.B.iv.2</figcaption>
 </figure>
 </div>
 <p>In Polk County, only 19.8% of the students reporting stated that their school has a School-Based Health center, and out of those students at schools with SBHC, only there wasn’t any data reported for any 8th graders using the SBHC’s at their schools. For the State of Oregon, 31% of 8th-grade students reported having an SBHC and 24.5% of those students reported using the SBHC in the last 12 months. The numbers were a lot bigger for both Polk County and the State of Oregon among 11th graders. 60.9% of 11th graders in Polk County reported their school having an SBHC, of those, 36.7% reported having used the SBHC at least once in the last 12 months. In comparison to the State of Oregon, 47.6% reported having an SBHC and 29% reported having used the SBHC at least once.</p>
@@ -284,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figure_6_C_ji Large.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure Figure 6.C.ii</figcaption><p></p>
+<figcaption class="figure-caption">Figure Figure 6.C.ii</figcaption>
 </figure>
 </div>
 </section>
@@ -441,9 +445,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -508,6 +526,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
